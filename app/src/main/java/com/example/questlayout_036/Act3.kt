@@ -50,7 +50,7 @@ fun ActivityPertama(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(id = R.color.card_0_bg)
             )
-        ){
+        ) {
             Row() {
                 val gambar = painterResource(id = R.drawable.logo)
                 Image(
@@ -61,7 +61,7 @@ fun ActivityPertama(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        stringResource( R.string.nama),
+                        stringResource(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
@@ -77,6 +77,16 @@ fun ActivityPertama(modifier: Modifier) {
                         modifier = Modifier
                             .fillMaxSize()
                     )
+                    {
+                        Text(
+                            stringResource(id = R.string.copy),
+                            modifier = Modifier
+                                .align(Alignment.BottomCenter)
+                                .padding(bottom = 58.dp)
+                        )
+                    }
+                }
+            }
         }
     }
 }
